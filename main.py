@@ -15,6 +15,9 @@
 
 # Modified by Alex Benfica. 
 # Used to create a video for Youtube channel Mundo da Eletrica.
+# this is the backend for this project using ESP8266 SoC Wifi Module
+# https://github.com/mundodaeletrica/WiFi-Youtube-Subscriber-Counter-ESP8266
+
 
 import webapp2
 import os
