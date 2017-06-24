@@ -14,13 +14,10 @@
 
 from google.appengine.api import urlfetch
 import json
-import api_key
+from api_key import YOUTUBE_DATA_API_KEY
 
 
 def getSubscriberCount(channelId):
-
-    # youtube V3 API key
-    API_KEY = 'AIzaSyBwdWB55h3mZUQeHiURIv8fjMK7vB5SccE';
 
     # https://developers.google.com/youtube/v3/docs/channels/list#try-it
     url = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&id=%s&key=%s' % (channelId, YOUTUBE_DATA_API_KEY)
