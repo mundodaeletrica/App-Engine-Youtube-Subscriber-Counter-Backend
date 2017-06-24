@@ -1,0 +1,19 @@
+runtime: python27
+threadsafe: true
+
+application: yt-subscriber-count
+version: 1
+api_version: 1
+
+# automatic_scaling:
+  # somente ativa novas instancias em ultimo caso
+  # max_pending_latency: 15000ms 
+    
+manual_scaling:
+  # do not allow more than one instance... so this will be in the free quota forever.
+  instances: 1  
+  
+
+handlers:
+- url: /.*
+  script: main.app
